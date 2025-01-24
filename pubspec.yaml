@@ -1,0 +1,69 @@
+name: serasa
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  build_runner: any
+
+  #https://pub.dev/packages/dio
+  dio: ^5.3.3
+  
+  #https://pub.dev/packages/flutter_mobx
+  flutter_mobx: ^2.0.6+5
+
+  #https://pub.dev/packages/get_it
+  get_it: ^7.2.0
+
+  #https://pub.dev/packages/get
+  get: ^4.6.6
+
+  #https://pub.dev/packages/intl
+  intl: ^0.19.0
+
+  #https://pub.dev/packages/mobx
+  mobx: ^2.3.3+2
+
+  #https://pub.dev/packages/equatable
+  equatable: ^2.0.5
+
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  shimmer: ^3.0.0
+  mocktail: ^1.0.4
+  flutter_native_splash: ^2.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+  mobx_codegen: ^2.6.1
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - images/
+
+flutter_native_splash:
+  color: "#ffffff" # Cor de fundo da splash
+  image: images/marvel_logo.png # Caminho para o logo da splash
+  android: true
+  ios: true
+  web: false # Defina como true se for usar no Flutter Web
+  android_gravity: center # Centraliza o logo no Android
+  ios_content_mode: scaleAspectFill # Centraliza e ajusta o logo no iOS
+  fullscreen: true # Define a splash em tela cheia
+
